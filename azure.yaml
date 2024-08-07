@@ -1,5 +1,17 @@
 # https://aka.ms/yaml
 
+trigger:
+  batch: true
+  branches:
+    include:
+    - main
+  paths:
+    include:
+    - products/storage/*
+    exclude:
+    - products/**
+    - pipelines/**
+
 pr: 
   branches:
     include:
