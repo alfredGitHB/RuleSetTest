@@ -3,7 +3,7 @@
 pr: 
   branches:
     include:
-    - main
+    - alfred*
   paths:
     include:
     - Config
