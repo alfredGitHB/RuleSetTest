@@ -1,13 +1,5 @@
 # https://aka.ms/yaml
 
-trigger: 
-  branches:
-    include:
-    - main
-  paths:
-    include:
-    - Config
-
 pr: 
   branches:
     include:
