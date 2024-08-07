@@ -6,7 +6,7 @@ pr:
     - alfred*
   paths:
     include:
-    - Config
+    - Settings/**
 
 pool:
   vmImage: ubuntu-latest
