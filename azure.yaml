@@ -7,7 +7,7 @@ trigger:
     - main
   paths:
     include:
-    - products/storage/*
+    - Settings/*
     exclude:
     - products/**
     - pipelines/**
