@@ -35,3 +35,13 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+- task: Synapse workspace deployment@2
+  inputs:
+    operation: 'deploy'
+    azureSubscription: 'WIFC'
+    TargetWorkspaceName: 
+    DeleteArtifactsNotInTemplate: false
+    DeployManagedPrivateEndpoints: false
+    FailOnMissingOverrides: false
+    Environment: 'prod'
+    npmpackage: 'prod'
